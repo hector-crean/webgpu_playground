@@ -5,6 +5,8 @@ use futures::executor::block_on;
 use mint::{Vector2, Vector3, Vector4};
 use wgpu::{include_wgsl, util::DeviceExt, BufferAddress};
 
+// @Ref: https://developer.nvidia.com/gpugems/gpugems2/part-v-image-oriented-computing/chapter-37-octree-textures-gpu
+
 #[derive(Debug, ShaderType, PartialEq)]
 struct Scalar {
     density: f32,
